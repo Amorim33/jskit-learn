@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="866" height="383" viewBox="0 0 866 383" font-family='"Latin Modern Roman", "CMU Serif", "Times New Roman", Times, serif' font-size="15">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,1 L9,5 L0,9 z" fill="#111"/>
+</marker>
+<style>
+text { fill: #111; }
+.m { font-style: italic; }
+.b { font-weight: bold; }
+.big { font-size: 21px; }
+.title { font-size: 17px; font-weight: bold; }
+.cap { fill: #666; font-size: 13px; }
+.wlabel { font-size: 14px; }
+.node { fill: #fff; stroke: #111; stroke-width: 1.2; }
+.bias { fill: #f2f2f2; }
+.edge { stroke: #111; stroke-width: 1; }
+.axis { stroke: #666; stroke-width: 0.6; }
+.step { fill: none; stroke: #111; stroke-width: 1.6; }
+.rule-thick { stroke: #111; stroke-width: 1.2; }
+.rule-thin { stroke: #111; stroke-width: 0.6; }
+</style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text class="title" x="433" y="45" text-anchor="middle">Perceptron on MNIST: “is it a 3?”</text>
+<line class="edge" x1="65.79956825824229" y1="86.36497336335434" x2="258.3653661932765" y2="195.20651132663454" marker-end="url(#arrow)"/>
+<circle class="node" cx="51" cy="78" r="17"/>
+<text x="51" y="83" text-anchor="middle"><tspan class="m">x</tspan><tspan dy="4" font-size="11">1</tspan><tspan dy="-4">​</tspan></text>
+<text class="wlabel" transform="translate(142.83 129.9) rotate(29.48)" y="-8" text-anchor="middle"><tspan class="m">w</tspan><tspan dy="4" font-size="11">1</tspan><tspan dy="-4">​</tspan> = 0.000</text>
+<line class="edge" x1="67.09939837282457" y1="135.4597959699144" x2="256.37739072391537" y2="199.64972381071914" marker-end="url(#arrow)"/>
+<circle class="node" cx="51" cy="130" r="17"/>
+<text x="51" y="135" text-anchor="middle"><tspan class="m">x</tspan><tspan dy="4" font-size="11">2</tspan><tspan dy="-4">​</tspan></text>
+<text class="wlabel" transform="translate(142.81 161.14) rotate(18.73)" y="-8" text-anchor="middle"><tspan class="m">w</tspan><tspan dy="4" font-size="11">2</tspan><tspan dy="-4">​</tspan> = 0.000</text>
+<line class="edge" x1="67.89241002639722" y1="183.90957678559272" x2="255.1645493713925" y2="205.07947079850524" marker-end="url(#arrow)"/>
+<circle class="node" cx="51" cy="182" r="17"/>
+<text x="51" y="187" text-anchor="middle"><tspan class="m">x</tspan><tspan dy="4" font-size="11">3</tspan><tspan dy="-4">​</tspan></text>
+<text class="wlabel" transform="translate(142.8 192.38) rotate(6.45)" y="-8" text-anchor="middle"><tspan class="m">w</tspan><tspan dy="4" font-size="11">3</tspan><tspan dy="-4">​</tspan> = 0.000</text>
+<text class="m" x="51" y="239" text-anchor="middle">⋮</text>
+<line class="edge" x1="67.09939837282457" y1="280.5402040300856" x2="256.37739072391537" y2="216.35027618928086" marker-end="url(#arrow)"/>
+<circle class="node" cx="51" cy="286" r="17"/>
+<text x="51" y="291" text-anchor="middle"><tspan class="m">x</tspan><tspan class="m" dy="4" font-size="11">n</tspan><tspan dy="-4">​</tspan></text>
+<text class="wlabel" transform="translate(142.81 254.86) rotate(-18.73)" y="-8" text-anchor="middle"><tspan class="m">w</tspan><tspan class="m" dy="4" font-size="11">n</tspan><tspan dy="-4">​</tspan> = 0.000</text>
+<line class="edge" x1="65.79956825824229" y1="329.63502663664565" x2="258.3653661932765" y2="220.79348867336546" marker-end="url(#arrow)"/>
+<circle class="node bias" cx="51" cy="338" r="17"/>
+<text x="51" y="343" text-anchor="middle"><tspan>1</tspan></text>
+<text class="wlabel" transform="translate(142.83 286.1) rotate(-29.48)" y="-8" text-anchor="middle"><tspan class="m">b</tspan> = −27.230</text>
+<circle class="node" cx="281" cy="208" r="24"/>
+<text class="big" x="281" y="215" text-anchor="middle">Σ</text>
+<line class="edge" x1="305" y1="208" x2="355" y2="208" marker-end="url(#arrow)"/>
+<text class="m" x="331" y="200" text-anchor="middle">z</text>
+<rect class="node" x="357" y="186" width="58" height="44" rx="3"/>
+<line class="axis" x1="367" y1="217" x2="405" y2="217"/>
+<polyline class="step" points="367,217 386,217 386,199 405,199"/>
+<text class="cap" x="386" y="246" text-anchor="middle"><tspan class="m">H</tspan>(<tspan class="m">z</tspan>)</text>
+<line class="edge" x1="415" y1="208" x2="457" y2="208" marker-end="url(#arrow)"/>
+<text class="m" x="463" y="213">ŷ</text>
+<line class="rule-thick" x1="529" y1="86" x2="837.8" y2="86"/>
+<text class="b" x="529" y="104">Hyperparameters</text>
+<line class="rule-thin" x1="529" y1="112" x2="837.8" y2="112"/>
+<text x="529" y="134">inputs (n)</text>
+<text x="689.6" y="134">784</text>
+<text x="529" y="156">learning rate (η)</text>
+<text x="689.6" y="156">0.01</text>
+<text x="529" y="178">activation</text>
+<text x="689.6" y="178">Heaviside step</text>
+<text x="529" y="200">update rule</text>
+<text x="689.6" y="200">w ← w + η Xᵀ(y − ŷ)</text>
+<text x="529" y="222">initialization</text>
+<text x="689.6" y="222">zeros</text>
+<line class="rule-thick" x1="529" y1="232" x2="837.8" y2="232"/>
+<line class="rule-thick" x1="529" y1="250" x2="837.8" y2="250"/>
+<text class="b" x="529" y="268">Training</text>
+<line class="rule-thin" x1="529" y1="276" x2="837.8" y2="276"/>
+<text x="529" y="298">epochs</text>
+<text x="689.6" y="298">50 / 50</text>
+<text x="529" y="320">samples</text>
+<text x="689.6" y="320">10000</text>
+<line class="rule-thick" x1="529" y1="330" x2="837.8" y2="330"/>
+</svg>
